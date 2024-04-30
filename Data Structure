@@ -1,0 +1,116 @@
+## Data Structure
+### Topics
+- List
+- Set
+- Map
+- Stack 
+- Queue
+## Why do we learn Data structure?
+- to store data and process data efficiently.
+-
+![Screenshot 2024-04-27 at 14.52.03.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/6ca9d80b-3a1e-7b90-a204-5aa664a1850f.png)
+
+![Screenshot 2024-04-27 at 14.50.25.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/75d530dd-7706-1e9e-4f9e-95054675d308.png)
+
+## List
+Can store single data type of many object
+### Two Types of Lists
+- Array List
+- Linked List
+
+### Array List
+List that uses Array as internal function.
+var array = new int[10];
+### Pros
+O(1)
+- To get
+- To access
+### Cons 
+O(n)
+- Insersation
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/b8cfc5cf-9306-03d3-1d30-94516f20cad0.png)
+
+- Deletion -> has to shift values
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/d9d11293-3631-2cdc-8a7c-1c86199489b8.png)
+
+- Search
+
+### Lincked List
+List that uses "Node" as internal function
+
+### Pros
+O(n)*O(1)
+- Insertion
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/60d60f75-7ed0-a47b-327d-9c2d2f408411.png)
+
+- Deletion
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/2153a4b7-4533-c333-2042-46e66e05a204.png)
+
+- Append
+
+### Cons 
+O(n)
+- Get
+- Search 
+![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/d48f8b2e-ea33-a0cf-d53d-451cb3215f8e.png)
+
+### Two Types of Lincked Lists
+Singly Lincked List
+- Head
+
+Doubly Lincked List
+-Head 
+-Tail
+### Set
+- Orderless
+- no duplicates
+
+What cases we can use?
+Ex) Types of car, cakes...
+
+Map
+- Orderless
+Dictionary in pyton
+
+Key-Value Set
+
+cakePriceMap = {"CheesesCake": 190, "ChocolateCake": 220, "PlainCake": "120", "StroberryCake": 250}
+
+cakePriceMap.get("CheesesCake") returns 190
+
+CalculateMemoryPosition("CheesesCake") -> Memory Position
+
+### **Runtime**
+
+cakeList = ["CheesesCake", "ChocolateCake", "PlainCake", "StroberryCake"] priceList = [190, 220, 250, 320]
+
+List Search -> O(n)
+
+Map Search -> O(1)
+
+Search -> O(1) Insertion -> O(1) Deletion -> O(1) Access -> O(1)
+
+### **Cons**
+
+- Lower storage efficiency
+- Collision
+    - Lower runtime
+    - 75 %
+    - depends on Quolity of Hash function
+- Orderless
+
+### **HashMap**
+
+Uses Hash function to calculate memory position
+
+## **Stack**
+
+FILO
+
+LIFO
+
+積み重ねる
+
+## **Queue**
+
+FIFO
