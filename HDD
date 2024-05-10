@@ -1,0 +1,37 @@
+補助記憶装置を学ぶ
+
+HDDについての説明
+HDD　VS　SSD
+HDD：安価でデータ容量が少ない、そして処理も遅い
+SSD：高価でデータ容量が多い、処理速度が早い；
+
+プラック：円盤にデータを保存。
+円盤の中にセクターがあり一つ５１２バイトの記憶が保存可能。
+
+HDDの容量；
+トラック５１２＊２０
+シリンダ
+５１２＊２０＊６０バイト＝０．６１MB
+０．６１＊１５００＝９２２MB保存できるということ
+
+アクセス時間
+①算出方法
+プラッタからデータを読み出したいとき；
+３つの軸を考える。
+シーク時間
+サーチ時間
+![Screenshot 2024-05-10 at 23.14.24.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/8d1064d7-b999-6582-f0bc-cda25e5e6d64.png)
+![Screenshot 2024-05-10 at 23.14.48.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/f168ed65-d5ed-363a-de02-7e40a17933d3.png)
+![Screenshot 2024-05-10 at 23.15.25.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/bd4cbab0-45ab-1f82-d3b4-1f9871e63f93.png)
+![Screenshot 2024-05-10 at 23.15.37.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/bf3e5b0e-6d6e-3366-81dc-6fd0cc4eab6e.png)
+計算するときは回転待ち時間を求める。
+
+②データ管理
+データがばらばらだとサーチに時間がかかる。
+![Screenshot 2024-05-10 at 23.16.47.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3779552/ca9c952b-c233-e49e-b76e-fe02e87e577e.png)
+
+③性能向上
+RAID→HDDの処理速度や性能を向上する。
+RAI0：２台以上サーバーにデータを保存して書く。
+RAI１：２台以上のサーバーにデータをコピーしてデータを保存。
+RAID５：３台のHDDに分散してパリティに書き込む。なので、HDD１が壊れても、HDDに１，２にパリティが書き込こまれていれば、復元可能。
